@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\RegisterController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,6 +14,11 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+Route::view('/','home');
+
+Route::get('register', [RegisterController::class, 'register']);
+Route::post('registerStore', [RegisterController::class, 'registerStore'])->name('store.register');
+
+Route::get('demo',function(){
+    return total_add_to_cart_prodcut();
 });

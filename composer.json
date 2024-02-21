@@ -11,6 +11,7 @@
         "laravel/sanctum": "^3.3",
         "laravel/tinker": "^2.8",
         "laravel/ui": "^4.4",
+        "realrashid/sweet-alert": "^7.1",
         "stancl/tenancy": "^3.7"
     },
     "require-dev": {
@@ -27,7 +28,10 @@
             "App\\": "app/",
             "Database\\Factories\\": "database/factories/",
             "Database\\Seeders\\": "database/seeders/"
-        }
+        },
+        "files": [
+            "app/Healper/Healper.php"
+        ]
     },
     "autoload-dev": {
         "psr-4": {
